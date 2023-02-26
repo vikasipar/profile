@@ -1,0 +1,129 @@
+body {
+  background: #fff;
+  font-family: "Sawarabi Mincho", serif;
+}
+nav {
+  border-bottom: 1px solid #033f89;
+}
+.logo a {
+  color: rgb(237, 86, 75);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  color: #033f89;
+  background: #f0f0f4;
+  margin: auto;
+  margin-top: 7%;
+  padding: 50px 0px 0px 0px;
+  border: 2px solid #033f89;
+  box-shadow: 2px 2px 1px 2px #033f89;
+  border-radius: 7px;
+}
+.profile:hover {
+  color: #033f89;
+  border: 2.4px solid #0251b3;
+}
+.left {
+  width: 50%;
+  margin-right: 20px;
+}
+.left #img1 {
+  width: 89px;
+  margin-left: 10px;
+  margin-top: -81.9px;
+}
+.left #img2 {
+  width: 72%;
+  display: flex;
+  justify-content: end;
+  margin-left: 15%;
+  margin-bottom: 70px;
+  margin-top: 5px;
+  border: 2px solid #0251b3;
+  border-radius: 50%;
+}
+.right {
+  width: 50%;
+  padding-left: 20px;
+  margin-top: 65px;
+  margin-bottom: 40px;
+}
+.right h1 {
+  font-size: 2.2rem;
+  padding: 3px;
+}
+.right h2 {
+  font-size: 1.7rem;
+  padding: 3px;
+}
+.right button {
+  margin-left: 25%;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    width: 90%;
+    margin: 10% auto;
+    box-shadow: 2px 1px 1px 2px #0251b3;
+  }
+  .right h1 {
+    font-size: 1.9rem;
+    padding: 3px;
+  }
+  .right h2 {
+    font-size: 1rem;
+    padding: 3px;
+  }
+}
+
+/*media query*/
+@media screen and (max-width: 580px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+    background: #fff;
+    box-shadow: none;
+  }
+  .profile:hover {
+    border: none;
+    box-shadow: none;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 95%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    color: #033f89;
+  }
+  .right h1 {
+    font-size: 2.1rem;
+    padding: 5px;
+  }
+  .right h2 {
+    font-size: 1.4rem;
+    padding: 5px;
+  }
+  .left #img1 {
+    display: none;
+  }
+  .left #img2 {
+    width: 69%;
+    border: none;
+    padding: 0%;
+    margin: 0% auto;
+  }
+  .right button {
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+}
